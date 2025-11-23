@@ -1,14 +1,11 @@
 import socket
 from models import GestionnaireTaches
 
-# Crée le gestionnaire de tâches
 gestionnaire = GestionnaireTaches()
 
-# Crée un socket TCP
 serveur = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-# Adresse et port
-HOST = "127.0.0.1"
+HOST = "0.0.0.0"
 PORT = 5000
 serveur.bind((HOST, PORT))
 serveur.listen()
@@ -22,7 +19,6 @@ while True:
     msg = client.recv(1024).decode().strip()
     print("Message reçu:", msg)
 
-    # Traitement simple des commandes
     if msg.startswith("ADD;"):
         try:
             _, titre, description, auteur = msg.split(";", 3)
