@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Projet POO / DevOps – Gestionnaire de Tâches (Client/Serveur)
 
 Ce projet est une application de gestion de tâches développée en Python en architecture **client–serveur**.  
@@ -127,3 +128,22 @@ docker push adem06/projet_poo_serveur
 
  Auteur
 adem mathlouthi RSI2
+=======
+# Projet POO + Client-Serveur + Docker
+
+## Description
+Application de gestion de tâches multi-clients via un serveur Python utilisant sockets.
+
+## Structure du projet
+projet_POO/
+    server/
+    client/
+    docker/
+    README.md
+
+## Lancer le serveur
+python server/serveur.py
+
+## Lancer le client
+python client/client.py
+>>>>>>> dev
