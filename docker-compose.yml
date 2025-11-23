@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  serveur:
+    image: adem06/projet_poo-serveur:latest
+    ports:
+      - "5000:5000"
+
+  client:
+    image: adem06/projet_poo-client:latest
+    stdin_open: true
+    tty: true
