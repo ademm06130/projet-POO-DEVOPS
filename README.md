@@ -7,7 +7,7 @@ L’ensemble du projet fonctionne dans **Docker**, avec un `docker-compose` pour
 
 ---
 
-## 📂 Structure du projet
+##  Structure du projet
 
 projet_POO/
 ├── client/
@@ -24,9 +24,9 @@ projet_POO/
 
 ---
 
-## 🧱 Fonctionnalités
+##  Fonctionnalités
 
-### ✔ Côté serveur
+###  Côté serveur
 - Stockage des tâches via une classe `GestionnaireTaches`
 - Commandes supportées :
   - `ADD;Titre;Description;Auteur`
@@ -35,7 +35,7 @@ projet_POO/
   - `STATUS;id;nouveau_statut`
 - Affichage dans le terminal des actions du client (logs simples)
 
-### ✔ Côté client
+###  Côté client
 Menu interactif :
 1. Ajouter une tâche  
 2. Lister les tâches  
@@ -47,19 +47,19 @@ Le client communique avec le serveur via des sockets TCP.
 
 ---
 
-## 🐳 Docker
+##  Docker
 
 Les deux composants (client et serveur) fonctionnent dans des conteneurs séparés.
 
-### 📌 **Images Docker Hub**
+###  **Images Docker Hub**
 - Serveur : `adem06/projet_poo_serveur`
 - Client : `adem06/projet_poo_client`
 
 ---
 
-## 🚀 Installation et exécution
+##  Installation et exécution
 
-### 1️⃣ Cloner le dépôt GitHub
+### 1️ Cloner le dépôt GitHub
 
 ```bash
 git clone https://github.com/ademm06130/projet-POO-DEVOPS.git
@@ -79,7 +79,7 @@ le serveur
 le client avec un menu interactif
 
 
-3️⃣ Utilisation
+3️ Utilisation
 
 Quand le client démarre, un menu apparaît :
 
@@ -94,7 +94,7 @@ Votre choix :
 Il suffit de taper un chiffre puis d’appuyer sur Entrée.
 
 
-📝 Exemples de commandes côté serveur
+ Exemples de commandes côté serveur
 
 Les messages reçus par le serveur s’affichent automatiquement :
 
@@ -102,7 +102,7 @@ Connexion de ('172.20.0.3', 45812)
 [('172.20.0.3', 45812)] Reçu du client : ADD;Course;Acheter du pain;Adem
 
 
-🧪 Tester les conteneurs séparément
+ Tester les conteneurs séparément
 
 Lancer seulement le serveur
 
@@ -112,10 +112,10 @@ Lancer seulement le client
 
 docker-compose up client
 
-🛑 Arrêter et nettoyer
+ Arrêter et nettoyer
 docker-compose down
 
-📦 Déploiement sur Docker Hub
+ Déploiement sur Docker Hub
 
 Les images ont été publiées avec :
 
@@ -125,5 +125,5 @@ docker push adem06/projet_poo_client
 docker build -t adem06/projet_poo_serveur -f Dockerfile.server .
 docker push adem06/projet_poo_serveur
 
-👤 Auteur
+ Auteur
 adem mathlouthi RSI2
