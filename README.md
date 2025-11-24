@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Projet POO / DevOps – Gestionnaire de Tâches (Client/Serveur)
 
 Ce projet est une application de gestion de tâches développée en Python en architecture **client–serveur**.  
@@ -11,15 +10,18 @@ L’ensemble du projet fonctionne dans **Docker**, avec un `docker-compose` pour
 ##  Structure du projet
 
 projet_POO/
-├── client/
-│ └── client.py
-├── server/
-│ ├── serveur.py
-│ └── models.py
-├── docker-compose.yml
-├── Dockerfile.client
-├── Dockerfile.server
-└── README.md
+client/
+      client.py
+      Dockerfile.client
+server/
+      serveur.py
+      models.py
+      Dockerfile.server
+docker/
+      Dockerfile
+docker-compose.yml
+README.md
+.gitignore
 
 
 
@@ -62,7 +64,7 @@ Les deux composants (client et serveur) fonctionnent dans des conteneurs sépar�
 
 ### 1️ Cloner le dépôt GitHub
 
-```bash
+dans le terminal taper:
 git clone https://github.com/ademm06130/projet-POO-DEVOPS.git
 cd projet-POO-DEVOPS
 
@@ -146,4 +148,4 @@ python server/serveur.py
 
 ## Lancer le client
 python client/client.py
->>>>>>> dev
+
