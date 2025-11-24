@@ -10,15 +10,18 @@ L’ensemble du projet fonctionne dans **Docker**, avec un `docker-compose` pour
 ##  Structure du projet
 
 projet_POO/
-├── client/
-│ └── client.py
-├── server/
-│ ├── serveur.py
-│ └── models.py
-├── docker-compose.yml
-├── Dockerfile.client
-├── Dockerfile.server
-└── README.md
+client/
+      client.py
+      Dockerfile.client
+server/
+      serveur.py
+      models.py
+      Dockerfile.server
+docker/
+      Dockerfile
+docker-compose.yml
+README.md
+.gitignore
 
 
 
@@ -61,7 +64,7 @@ Les deux composants (client et serveur) fonctionnent dans des conteneurs sépar�
 
 ### 1️ Cloner le dépôt GitHub
 
-```bash
+dans le terminal taper:
 git clone https://github.com/ademm06130/projet-POO-DEVOPS.git
 cd projet-POO-DEVOPS
 
@@ -127,3 +130,22 @@ docker push adem06/projet_poo_serveur
 
  Auteur
 adem mathlouthi RSI2
+=======
+# Projet POO + Client-Serveur + Docker
+
+## Description
+Application de gestion de tâches multi-clients via un serveur Python utilisant sockets.
+
+## Structure du projet
+projet_POO/
+    server/
+    client/
+    docker/
+    README.md
+
+## Lancer le serveur
+python server/serveur.py
+
+## Lancer le client
+python client/client.py
+c
