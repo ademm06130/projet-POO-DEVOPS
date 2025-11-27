@@ -148,4 +148,8 @@ python server/serveur.py
 
 ## Lancer le client
 python client/client.py
+<<<<<<< HEAD
 c
+=======
+
+>>>>>>> dev
