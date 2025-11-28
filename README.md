@@ -145,8 +145,7 @@ docker build -t adem06/projet_poo_serveur -f Dockerfile.server .
 
 docker push adem06/projet_poo_serveur
 
- Auteur
-adem mathlouthi RSI2
+
 
 =======
 # Projet POO + Client-Serveur + Docker
