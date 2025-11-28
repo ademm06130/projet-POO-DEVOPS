@@ -82,21 +82,25 @@ Cela va construire les images (si local)
 ou tu peux demarer separerement
 
 serveur : docker-compose up serveur
+
 et dans une autre terminal
+
 client :docker-compose run client
 
-### methode 2 (avec docker run)
+# methode 2 (avec docker run)
 
 serveur : docker run -it -p 5000:5000 serveur-taches
+
+
 client : docker run -it --network="host" client-taches
 
-### methode 3 (avec python)
+# methode 3 (avec python)
 pour le serveur dans le terminal va dans le dossier serveur et tape:
 python serveur.py
 pour le client dans un autre terminal va dans dossier client et tape :
 python client.py
 
-### resultat
+## resultat
 
 Quand le client démarre, un menu apparaît :
 
@@ -119,35 +123,28 @@ Connexion de ('172.20.0.3', 45812)
 [('172.20.0.3', 45812)] Reçu du client : ADD;Course;Acheter du pain;Adem
 
 
- Tester les conteneurs séparément
+ 
+ # apres utilisation
+ vous notoyer le projet avec 
 
-Lancer seulement le serveur
+ docker-compose down
 
-docker-compose up serveur
-ou
-docker ryn -it -p 5000:5000 serveur-taches
-
-Lancer seulement le client
-
-docker-compose up client
-ou
-docker run -it --network="host" client-taches
-
- Arrêter et nettoyer
-docker-compose down
-
- Déploiement sur Docker Hub
+ 
+ ## Déploiement sur Docker Hub
 
 Les images ont été publiées avec :
 
 docker build -t adem06/projet_poo_client -f Dockerfile.client .
+
 docker push adem06/projet_poo_client
 
 docker build -t adem06/projet_poo_serveur -f Dockerfile.server .
+
 docker push adem06/projet_poo_serveur
 
  Auteur
 adem mathlouthi RSI2
+
 mohamed sahli RSI2
 =======
 # Projet POO + Client-Serveur + Docker
@@ -155,15 +152,3 @@ mohamed sahli RSI2
 ## Description
 Application de gestion de tâches multi-clients via un serveur Python utilisant sockets.
 
-## Structure du projet
-projet_POO/
-    server/
-    client/
-    docker/
-    README.md
-
-## Lancer le serveur
-python server/serveur.py
-
-## Lancer le client
-python client/client.py
