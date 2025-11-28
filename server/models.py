@@ -11,7 +11,7 @@ class Tache:
         return {
             "id": self.id,
             "titre": self.titre,
-            "description": self.description
+            "description": self.description,
             "statut": self.statut,
             "auteur": self.auteur
         }
