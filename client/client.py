@@ -3,7 +3,7 @@ import socket
 class ClientTaches:
     def __init__(self, host="127.0.0.1", port=5000):
         self.host = host
-        self.port = port
+        self.port = por
 
     def envoyer(self, message):
         try:
