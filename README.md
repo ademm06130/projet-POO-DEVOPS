@@ -96,8 +96,11 @@ client : docker run -it --network="host" client-taches
 
 # methode 3 (avec python)
 pour le serveur dans le terminal va dans le dossier serveur et tape:
+
 python serveur.py
+
 pour le client dans un autre terminal va dans dossier client et tape :
+
 python client.py
 
 ## resultat
@@ -145,7 +148,6 @@ docker push adem06/projet_poo_serveur
  Auteur
 adem mathlouthi RSI2
 
-mohamed sahli RSI2
 =======
 # Projet POO + Client-Serveur + Docker
 
