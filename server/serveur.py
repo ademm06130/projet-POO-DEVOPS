@@ -1,5 +1,5 @@
 import socket
-from models import GestionnaireTaches
+from models import GestionnaireTache
 
 gestionnaire = GestionnaireTaches()
 
