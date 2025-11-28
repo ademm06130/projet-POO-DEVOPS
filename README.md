@@ -69,20 +69,34 @@ git clone https://github.com/ademm06130/projet-POO-DEVOPS.git
 cd projet-POO-DEVOPS
 
 
-docker-compose up --build
+docker-compose build
 
-Cela va :
+Cela va construire les images (si local)
 
-construire les images (si local)
+### les methode de lancer le projet
 
-lancer automatiquement :
+# methode 1 (avec docker-compose)
 
-le serveur
+"taper " docker-compose up "cela va demarer client et serveur ensemble"
 
-le client avec un menu interactif
+ou tu peux demarer separerement
 
+serveur : docker-compose up serveur
+et dans une autre terminal
+client :docker-compose run client
 
-3️ Utilisation
+### methode 2 (avec docker run)
+
+serveur : docker run -it -p 5000:5000 serveur-taches
+client : docker run -it --network="host" client-taches
+
+### methode 3 (avec python)
+pour le serveur dans le terminal va dans le dossier serveur et tape:
+python serveur.py
+pour le client dans un autre terminal va dans dossier client et tape :
+python client.py
+
+### resultat
 
 Quand le client démarre, un menu apparaît :
 
@@ -110,10 +124,14 @@ Connexion de ('172.20.0.3', 45812)
 Lancer seulement le serveur
 
 docker-compose up serveur
+ou
+docker ryn -it -p 5000:5000 serveur-taches
 
 Lancer seulement le client
 
 docker-compose up client
+ou
+docker run -it --network="host" client-taches
 
  Arrêter et nettoyer
 docker-compose down
@@ -130,6 +148,7 @@ docker push adem06/projet_poo_serveur
 
  Auteur
 adem mathlouthi RSI2
+mohamed sahli RSI2
 =======
 # Projet POO + Client-Serveur + Docker
 
@@ -148,8 +167,3 @@ python server/serveur.py
 
 ## Lancer le client
 python client/client.py
-<<<<<<< HEAD
-c
-=======
-
->>>>>>> dev
