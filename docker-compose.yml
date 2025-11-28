@@ -2,14 +2,12 @@ version: "3.9"
 
 services:
   serveur:
-    build: ./server
+    image: adem06/projet_poo-serveur:latest
     ports:
       - "5000:5000"
 
   client:
-    build: ./client
-    depends_on:
-      - serveur
+    image: adem06/projet_poo-client:latest
     stdin_open: true
     tty: true
     network_mode: "host"
