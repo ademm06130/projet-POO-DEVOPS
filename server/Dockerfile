@@ -5,4 +5,4 @@ WORKDIR /app
 COPY . /app/
 
 
-CMD ["python", "serveur.py"]
+CMD ["python", "serveur.py"
